@@ -23,20 +23,22 @@ Les identifiants des compétence à valider (pour choisir les bonnes colonnes du
 
 Cette évaluation évalue les compétences suivantes :
 
-+2DEV-202 – Ecrire un script en Python en suivant les bonnes pratiques de programmation
- Les paramètres du programme sont récupérés depuis la ligne de commande, qui possède un menu d'aide
- Les dates sont correctement gérées (format d'entrée et de sortie) à l'aide de la librairie datetime
- Le point d'entrée du script est identifié par if __name__ == "__main__", et l'étudiant peut expliquer l'utilité de cette construction
- Le script gère correctement le cas de deux étudiants avec le même nom de famille
- Le script gère correctement le cas de deux étudiants avec le même prénom
- Dans le cas où un étudiant a réussi deux fois la même épreuve, la meilleure note est retenue
- Le script gère correctement le choix de la compétence, même s'il y a plusieurs colonnes de compétences dans le fichier de sortie
- Le code est propre, aussi simplifié que possible et respecte la PEP8
- L'étudiant est capable de faire une petite modification de son script à la demande de l'enseignant lors de la défense
-Vous pouvez aller plus loin pour être également évalué(e) sur les compétences suivantes :
++2DEV-202 – Ecrire un script en Python en suivant les bonnes pratiques de programmation :
 
-+1DEV-241 – Réaliser une application OO sur base d'une spécification détaillée
- L'étudiant utilise des mécanismes OO dans le cadre du script
- La gestion des erreurs se fait sur base d'exceptions correctement gérées pour fournir un retour utilisateur pertinent
+   - Les paramètres du programme sont récupérés depuis la ligne de commande, qui possède un menu d'aide
+   - Les dates sont correctement gérées (format d'entrée et de sortie) à l'aide de la librairie datetime
+   - Le point d'entrée du script est identifié par if __name__ == "__main__", et l'étudiant peut expliquer l'utilité de cette construction
+   - Le script gère correctement le cas de deux étudiants avec le même nom de famille
+   - Le script gère correctement le cas de deux étudiants avec le même prénom
+   - Dans le cas où un étudiant a réussi deux fois la même épreuve, la meilleure note est retenue
+   - Le script gère correctement le choix de la compétence, même s'il y a plusieurs colonnes de compétences dans le fichier de sortie
+   - Le code est propre, aussi simplifié que possible et respecte la PEP8
+   - L'étudiant est capable de faire une petite modification de son script à la demande de l'enseignant lors de la défense
+
+
++1DEV-241 – Réaliser une application OO sur base d'une spécification détaillée:
+
+   - L'étudiant utilise des mécanismes OO dans le cadre du script
+   - La gestion des erreurs se fait sur base d'exceptions correctement gérées pour fournir un retour utilisateur pertinent
  
 +1DEV-203 – Utiliser les fonctionnalités avancées de Python
