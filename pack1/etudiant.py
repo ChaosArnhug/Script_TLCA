@@ -17,7 +17,7 @@ class Student:
         """
         self.__surname = surname
         self.__firstname = firstname
-        self.__date = str(date)
+        self.__date = datetime.strftime(date, "%Y-%m-%d %H:%M")
         self.__is_finished = is_finished
         self.__result = result
 
@@ -85,7 +85,7 @@ def new_student(list_student: list, surname: str, firstname: str, date, is_finis
     """
     for student in list_student:
         if student.surname == surname and student.firstname == firstname and is_finished and student.result < result:
-            student.date = str(date)
+            student.date = datetime.strftime(date, "%Y-%m-%d %H:%M")
             student.result = result
             return list_student
 
