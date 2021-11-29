@@ -10,8 +10,7 @@ def argument():
     parser.add_argument("moodle_CSV_path", help="CSV file with the result")
     parser.add_argument("model_file_path", help="XLSX file which is the model for the final file ")
     parser.add_argument("name_file", help="Name of the final file")
-    parser.add_argument("dev_201", help="Activation of the ability DEV-201")
-    parser.add_argument("dev_203", help="Activation of the ability DEV-203")
+    parser.add_argument("competences_actives", nargs="+", help="Activation of the ability DEV-201")
     return parser.parse_args()
 
 
@@ -34,4 +33,4 @@ if __name__ == "__main__":
     # Create the student's list
     student = generate_list_student(args.moodle_CSV_path)
     # Generate the final exel
-    manage_exel(args.model_file_path, "Evaluations", student, args.dev_201, args.dev_203, args.name_file, "TLCA_Eval")
+    manage_exel(args.model_file_path, "Evaluations", student, args.competences_actives, args.name_file, "Evaluations")
